@@ -10,7 +10,7 @@ class Person
     this.age=age;
    }
    String getfullname(){
-    return firstname +" "+lastname+" ";
+    return firstname +" "+lastname;
    }
    public static void main(String args[]){
     Person a1 = new Person("John","Doe",30);
@@ -18,11 +18,10 @@ class Person
 
     String ABC=a1.getfullname();
     String EFG=a2.getfullname();
+    double average = ((a1.age + a2.age)/2.0);
 
-    System.out.println("Person 1: "+ABC);
-    System.out.println("Person 2: "+EFG);
-
-    double average = (a1.age + a2.age)/2.0;
-    System.out.println(average);
+    System.out.println("Person 1:"+a1.getfullname());
+    System.out.println("Person 2:"+a2.getfullname());
+    System.out.println("Average Age:"+average);
    }
 }
