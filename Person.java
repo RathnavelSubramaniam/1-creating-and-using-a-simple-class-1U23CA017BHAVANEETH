@@ -22,7 +22,7 @@ class Person
     System.out.println("Person 1: "+ABC);
     System.out.println("Person 2: "+EFG);
 
-    double average = ((a1.age + a2.age)/2.0);
+    double average = (a1.age + a2.age)/2.0;
     System.out.println(average);
    }
 }
